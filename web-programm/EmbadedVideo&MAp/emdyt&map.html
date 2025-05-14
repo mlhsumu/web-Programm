@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Embedded Content</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .video-container, .map-container {
+            flex: 1;
+            min-width: 300px;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        iframe {
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Embedded Content Example</h1>
+    
+    <div class="container">
+        <div class="video-container">
+            <h2>Featured Video</h2>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/4HmnE5vTdX4?si=ciBc_PK0KXYQCSHH" 
+                    title="YouTube video player" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+            <p>Check out this interesting video about web development.</p>
+        </div>
+        
+        <div class="map-container">
+            <h2>Our Location</h2>
+            <iframe width="100%" height="315" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215495579928!2d-73.9878449240179!3d40.74844047138948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1681234567890!5m2!1sen!2sus" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Visit us at our headquarters in Dhaka City.</p>
+        </div>
+    </div>
+</body>
+</html>
